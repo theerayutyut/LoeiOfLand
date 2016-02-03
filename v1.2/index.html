@@ -1,23 +1,298 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
 
-<div class="home">
+<head>
 
-  <h1 class="page-heading">Posts</h1>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <title>เมืองเลย</title>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!-- Custom CSS -->
+  <link href="css/modern-business.css" rel="stylesheet">
 
+  <!-- Custom Fonts -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin' rel='stylesheet' type='text/css'>
+  <style>
+      @font-face {
+          font-family: 'Kanit', sans-serif;
+          src: url(sansation_light.woff);
+          }
+
+          div {
+            font-family: 'Kanit', sans-serif;
+          }
+  </style>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+</head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">เลย</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">หน้าแรก</a>
+                    </li>
+                    <li>
+                        <a href="about.html">ข้อมูลทั่วไป</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">สถานที่ท่องเที่ยว <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                              <a href="a1.html">ภูทอก เชียงคาน</a>
+                          </li>
+                          <li>
+                              <a href="a2.html">หมู่บ้านวัฒนธรรมไทดำบ้านนาป่าหนาด</a>
+                          </li>
+                          <li>
+                              <a href="a3.html">อุทยานแห่งชาติภูกระดึง</a>
+                          </li>
+                          <li>
+                              <a href="a4.html">อุทยานแห่งชาติภูเรือ</a>
+                          </li>
+                          <li>
+                              <a href="a5.html">ถนนคนเดินเชียงคาน</a>
+                            </li>
+                          <li>
+                              <a href="a6.html">หาดสันหลังมังกร</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ที่พัก <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="r1.html">แม่โขง คัลเจอร์ แอนด์ เนเจอร์ ทัวร์ รีสอร์ท</a>
+                            </li>
+                            <li>
+                                <a href="r2.html">ภูนาคำ รีสอร์ท</a>
+                            </li>
+                            <li>
+                                <a href="r3.html">ภูเรือรีสอร์ท (Phurua Resort)</a>
+                            </li>
+                            <li>
+                                <a href="r4.html">ภูผาน้ำ รีสอร์ท แอนด์ สปา</a>
+                            </li>
+                            <li>
+                                <a href="r5.html">เลยวิลเลจ (Loei Village)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ร้านอาหาร<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="h1.html">แพเพื่อนพ้อง</a>
+                            </li>
+                            <li>
+                                <a href="h2.html">บ้านต้นโขง</a>
+                            </li>
+                            <li>
+                                <a href="h2.html">ระเบียงน้ำ</a>
+                            </li>
+                            <li>
+                                <a href="h2.html">เลยดานัง</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="index.html">วิถีชีวิตคนเมืองเลย</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header Carousel -->
+    <header id="myCarousel" class="carousel slide">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="fill" style="background-image:url('http://www.wanyud.com/uploads/2015/08/26/o_19tk5rjvp16nc17nvfv19hc16u27.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://travel.mthai.com/wp-content/uploads/2014/12/2014_02_20_095622_0_OKnNDNkO12.jpg');"></div>
+                <div class="carousel-caption">
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://travel.mthai.com/wp-content/uploads/2014/12/13.jpg');"></div>
+                <div class="carousel-caption" >
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('https://mekinnn.files.wordpress.com/2014/11/12062517427c4a5247a1be0f39.jpg');"></div>
+                <div class="carousel-caption" >
+                    <h2></h2>
+                </div>
+            </div>
+            <div class="item">
+                <div class="fill" style="background-image:url('http://1.bp.blogspot.com/--76bktcqxkw/VeXUGuEzcnI/AAAAAAAAFxM/G_uvFC9oH_0/s1600/%25E0%25B8%25A0%25E0%25B8%25B9%25E0%25B9%2580%25E0%25B8%25A3%25E0%25B8%25B7%25E0%25B8%25AD1_1.jpg');"></div>
+                <div class="carousel-caption" >
+                    <h2></h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="icon-next"></span>
+        </a>
+    </header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <!-- Page Content -->
+<div class="container">
+    <!-- Features Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="col-lg-12">
+            <h1 class="page-header ">
+                <center>ยินดีต้องรับ สู่ เมืองเลย</center>
+            </h1>
+        </div>
+            <h1 class="page-header">ทำความรู้จักกับ<font size="10">  <b>"จังหวัดเลย"</b></font> </h1>
+        </div>
+        <div class="col-md-6">
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4.5"><b>"จังหวัดเลย"</b></font>
+              <font size="4">เป็นจังหวัดหนึ่งในภาคตะวันออกเฉียงเหนือตอนบน ห่างจากกรุงเทพมหานครประมาณ 520 กิโลเมตร มีสภาพภูมิประเทศที่งดงาม อากาศหนาวเย็น เป็นแหล่งเพาะปลูกไม้ดอกไม้ประดับที่สำคัญแห่งหนึ่งของประเทศ และยังเป็นเมืองท่องเที่ยวที่สำคัญอีกด้วย  
+              <br>
+              <br>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font size="4.5"><b>"จังหวัดเลย"</b></font> ตั้งอยู่ทางภาคตะวันออกเฉียงเหนือ ตอนบนของประเทศไทย มีพื้นที่ทั้งหมด 11,424.612 ตารางกิโลเมตร หรือ 7,140,382 ไร่ หรือประมาณร้อยละ 6.77 ของพื้นที่ในภาคตะวันออกเฉียงเหนือ
+เทอร์โมมิเตอร์ยักษ์ที่หน้าอำเภอภูเรือ
+จังหวัดเลยตั้งอยู่บนพื้นที่ราบสูงโคราช หรือที่เรียกกันว่า แอ่งสกลนคร ลักษณะภูมิประเทศส่วนใหญ่เป็นทิวเขาในแนวทางทิศเหนือใต้ และจะมีพื้นที่ราบลุ่มระหว่างหุบเขาที่ไม่ใหญ่มากนัก สลับกันอยู่ในแนวเทือกเขา</font>
+            </p>
+          </font>
+        </div>
+        <div class="col-md-6">
+            <img class="img-responsive" src="http://www.weekendhobby.com/camp/webboard/picture2011/2712255420081.jpg" alt="">
+        </div>
+    </div>
+    <!-- /.row -->
+
+    <!-- Marketing Icons Section -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header ">
+                <center>บทความใหม่</center>
+            </h1>
+        </div>
+        
+ <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="img/Putok.jpg" alt=""/>
+      <div class="caption">
+        <h3>ภูทอก เชียงคาน</h3>
+        <p> ตั้งอยู่ทางทิศใต้ของเมืองเชียงคาน เป็นเพียงภูเขาลูกเล็กๆ แต่ภูทอกแห่งนี้ก็มีเสน่ห์ที่เป็น จุดชมวิว ชมความงามของแม่น้ำโขง เมืองสานะคาม และแก่งคุดคู้ได้อย่างชัดเจน และเสน่ห์ยิ่งกว่านั้นของภูทอก ในฤดูฝนและฤดูหนาวจะถูกปกคลุมไปด้วยผ้าห่มหมอก หากได้มองจากยอดภูทอกจะเห็นเป็นทะเลหมอกได้แบบรอบทิศเลยทีเดียว</p>
+        <p><a href="a1.html" class="btn btn-primary" role="button">อ่านต่อ</a></p>
+      </div>
+    </div>
+  </div>
+        <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="img/Putok.jpg" alt=""/>
+      <div class="caption">
+        <h3>อุทยานแห่งชาติภูกระดึง</h3>
+        <p>ภูกระดึง เป็นอุทยานแห่งชาติลำดับที่ 2 ของประเทศไทย ตั้งอยู่ในท้องที่ตำบลศรีฐาน อำเภอภูกระดึง จังหวัดเลย เป็นภูเขาหินทรายยอดตัด </p>
+        <p><a href="#" class="btn btn-primary" role="button">อ่านต่อ</a> </p>
+      </div>
+    </div>
+  </div>
+        <div class="col-md-4">
+    <div class="thumbnail">
+      <img src="img/Putok.jpg" alt=""/>
+      <div class="caption">
+        <h3>เชียงคาน</h3>
+        <p>เชียงคาน เมืองเล็กๆ ริมแม่น้ำโขงสุดชายแดนไทย เป็นอำเภอหนึ่งในจังหวัดเลย ที่คงยังคงไว้ซึ่งวัฒนธรรม ขนบประเพณี การใช้ชีวิตแบบเรียบง่าย พอเพียง วิถีชีวิตแบบดั้งเดิม ซึ่งหาดูยากในปัจจุบั</p>
+        <p><a href="#" class="btn btn-primary" role="button">อ่านต่อ</a> </p>
+      </div>
+    </div>
+  </div>
+    </div>
+    
+    <!-- /.row -->
+      </div>
+    </div>
 </div>
+    <!-- Footer -->
+    
+ <footer>
+        <div class="row">
+            <div class="col-lg-12">
+                <p><center><h4>Copyright &copy; Your Website 2016</h4></center></p>
+                <div class="last-div">
+                <a href="" class="scrollup"><i class="glyphicon glyphicon-menu-up"></i></a>
+                </div>
+            </div>
+        </div>
+</footer>
+
+
+<!-- /.container -->
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Script to Activate the Carousel -->
+<script>
+$('.carousel').carousel({
+    interval: 5000 //changes the speed
+})
+</script>
+
+  </body>
+
+</html>
